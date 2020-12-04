@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "677328294354",
+    "firebase_url": "https://reliable-home-tution.firebaseio.com",
+    "project_id": "reliable-home-tution",
+    "storage_bucket": "reliable-home-tution.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:677328294354:android:9a1dc2bf90fa6dfa5db80b",
+        "android_client_info": {
+          "package_name": "com.example.adminreliablehometution"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "677328294354-8u15d06n15pf9v5ngkg7u27e09uaees5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPZf67L4kUxH33OZPaPe06yuG7ozDsNPk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "677328294354-8u15d06n15pf9v5ngkg7u27e09uaees5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:677328294354:android:948515ef16193a015db80b",
+        "android_client_info": {
+          "package_name": "com.example.reliablehometution"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "677328294354-uv9ncsb2seimqiip2poteh6hcpr5pc39.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.reliablehometution",
+            "certificate_hash": "64b908d6b7a6cb145146055567ac16e9c5ca89ea"
+          }
+        },
+        {
+          "client_id": "677328294354-vokuqgqlluv81h7qhkganku0jm14ol5k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.reliablehometution",
+            "certificate_hash": "c8b0278b01616ab5958014eca433259a1531c9cf"
+          }
+        },
+        {
+          "client_id": "677328294354-8u15d06n15pf9v5ngkg7u27e09uaees5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPZf67L4kUxH33OZPaPe06yuG7ozDsNPk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "677328294354-8u15d06n15pf9v5ngkg7u27e09uaees5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
