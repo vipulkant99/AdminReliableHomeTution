@@ -16,6 +16,7 @@ public class SelectType extends AppCompatActivity {
     private MaterialCardView teacherCardView;
     private MaterialCardView studentCardView;
     private MaterialCardView parentCardView;
+    private MaterialCardView otherCardView;
 
     private Animation animation1;
     private Animation animation2;
@@ -28,6 +29,7 @@ public class SelectType extends AppCompatActivity {
         teacherCardView = findViewById(R.id.teacherCardView);
         studentCardView = findViewById(R.id.studentCardView);
         parentCardView = findViewById(R.id.parentCardView);
+        otherCardView = findViewById(R.id.otherCardview);
 
         animation1 = AnimationUtils.loadAnimation(this,R.anim.from_left);
         teacherCardView.setAnimation(animation1);
@@ -38,11 +40,34 @@ public class SelectType extends AppCompatActivity {
         animation1 = AnimationUtils.loadAnimation(this,R.anim.from_left);
         parentCardView.setAnimation(animation1);
 
+        animation2 = AnimationUtils.loadAnimation(this , R.anim.from_right);
+        otherCardView.setAnimation(animation2);
+
         teacherCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(SelectType.this,allNames.class));
+                startActivity(new Intent(SelectType.this, teacherlist.class));
             }
         });
+        studentCardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SelectType.this , teacherlist.class));
+            }
+        });
+        parentCardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SelectType.this , teacherlist.class));
+            }
+        });
+        otherCardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SelectType.this , teacherlist.class));
+            }
+        });
+
+
     }
 }
