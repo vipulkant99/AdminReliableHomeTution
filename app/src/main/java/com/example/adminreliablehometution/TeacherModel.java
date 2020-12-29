@@ -1,56 +1,17 @@
 package com.example.adminreliablehometution;
 
 public class TeacherModel {
-    private String name , memail , mphn , purl ;
+    private String name, mail, phoneNo, purl;
 
-
-//    public TeacherModel(String name, String email, String phn, String purl) {
-//        this.name = name;
-//        this.email = email;
-//        this.phn = phn;
-//        this.purl = purl;
-//    }
-//
-//    public String getPurl() {
-//        return purl;
-//    }
-//
-//    public void setPurl(String purl) {
-//        this.purl = purl;
-//    }
-//
-//    public String getPhn() {
-//        return phn;
-//    }
-//
-//    public void setPhn(String phn) {
-//        this.phn = phn;
-//    }
-//
-//    public String getEmail() {
-//        return email;
-//    }
-//
-//    public void setEmail(String email) {
-//        this.email = email;
-//    }
-//
-//    public String getName() {
-//        return name;
-//    }
-//
-//    public void setName(String name) {
-//        this.name = name;
-//    }
     TeacherModel()
     {
 
     }
 
-    public TeacherModel(String name, String memail, String mphn, String purl) {
+    public TeacherModel(String name, String mail, String phoneNo, String purl) {
         this.name = name;
-        this.memail = memail;
-        this.mphn = mphn;
+        this.mail = mail;
+        this.phoneNo = phoneNo;
         this.purl = purl;
     }
 
@@ -62,20 +23,20 @@ public class TeacherModel {
         this.name = name;
     }
 
-    public String getMemail() {
-        return memail;
+    public String getMail() {
+        return mail;
     }
 
-    public void setMemail(String memail) {
-        this.memail = memail;
+    public void setMail(String mail) {
+        this.mail = mail;
     }
 
-    public String getMphn() {
-        return mphn;
+    public String getPhoneNo() {
+        return phoneNo;
     }
 
-    public void setMphn(String mphn) {
-        this.mphn = mphn;
+    public void setPhoneNo(String phoneNo) {
+        this.phoneNo = phoneNo;
     }
 
     public String getPurl() {
@@ -86,3 +47,5 @@ public class TeacherModel {
         this.purl = purl;
     }
 }
+
+

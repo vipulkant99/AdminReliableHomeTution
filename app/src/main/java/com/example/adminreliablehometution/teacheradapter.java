@@ -23,8 +23,8 @@ public class teacheradapter extends FirestoreRecyclerAdapter<TeacherModel , teac
     @Override
     protected void onBindViewHolder(@NonNull myviewholder holder, int position, @NonNull TeacherModel model) {
         holder.name.setText(model.getName());
-        holder.email.setText(model.getMemail());
-        holder.phn.setText(model.getMphn());
+        holder.email.setText(model.getMail());
+        holder.phn.setText(model.getPhoneNo());
 
       //  holder.name.setText(model.getName());
          //Glide.with(holder.img.getContext()).load(TeacherModel.getPurl()).into(holder.img);
