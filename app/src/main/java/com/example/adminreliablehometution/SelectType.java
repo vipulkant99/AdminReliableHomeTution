@@ -64,7 +64,7 @@ public class SelectType extends AppCompatActivity {
         otherCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(SelectType.this , teacherlist.class));
+                startActivity(new Intent(SelectType.this , other.class));
             }
         });
 
