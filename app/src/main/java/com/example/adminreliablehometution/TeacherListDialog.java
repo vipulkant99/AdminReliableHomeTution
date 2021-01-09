@@ -5,7 +5,6 @@ import android.app.Dialog;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.SearchView;
 
 import androidx.annotation.NonNull;
@@ -16,17 +15,16 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.ArrayList;
 import java.util.List;
 
-public class StudentList extends DialogFragment {
+public class TeacherListDialog extends DialogFragment {
     private NoteAdapter mAdapter;
     private List<String> noteList;
 
-    public StudentList(List<String> mList) {
+    public TeacherListDialog(List<String> mList) {
         noteList = mList;
     }
-    public StudentList() {
+    public TeacherListDialog() {
 
     }
     @NonNull
@@ -42,7 +40,7 @@ public class StudentList extends DialogFragment {
         final SearchView searchView = dialogView.findViewById(R.id.student_search);
 
         builder.setView(dialogView);
-        mAdapter = new NoteAdapter((other) getActivity(), noteList,1);
+        mAdapter = new NoteAdapter((other) getActivity(), noteList,0);
         RecyclerView.LayoutManager mLayoutManager =
                 new LinearLayoutManager((other) getActivity());
         recyclerView.setLayoutManager(mLayoutManager);
@@ -65,5 +63,4 @@ public class StudentList extends DialogFragment {
 
         return builder.create();
     }
-
 }

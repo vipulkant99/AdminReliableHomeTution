@@ -19,12 +19,14 @@ public class NoteAdapter  extends RecyclerView.Adapter<NoteAdapter.ListItemHolde
     private List<String> mNoteList;
     private List<String> mNoteListAll;
     private other mother;
+    private int y;
     public NoteAdapter(other mainActivity,
-                       List<String> noteList) {
+                       List<String> noteList,int x) {
 
         mother = mainActivity;
         mNoteList = noteList;
         mNoteListAll = new ArrayList<>(noteList);
+       y = x;
     }
     @NonNull
     @Override
@@ -61,7 +63,7 @@ public class NoteAdapter  extends RecyclerView.Adapter<NoteAdapter.ListItemHolde
 
         @Override
         public void onClick(View v) {
-            mother.showNote(getAdapterPosition());
+            mother.showNote(getAdapterPosition(),y);
             StudentList studentList = new StudentList();
             //studentList.finish();
         }
